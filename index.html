@@ -59,13 +59,14 @@
     }
 
     .hero-kitten img {
-      width: 100%;
-      max-width: 320px;
-      border-radius: 2rem;
-      box-shadow: 0 12px 28px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-      object-fit: cover;
-      aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 0;         
+  box-shadow: none;         
+  transition: transform 0.3s ease;
+  object-fit: contain;       
+
+  background: transparent;   
     }
 
     .hero-kitten img:hover {
@@ -382,7 +383,7 @@
   <div class="hero">
     <div class="hero-kitten">
       <!-- милый котёнок с Unsplash (котёнок породы рэгдолл, очень нежный) -->
-      <img src="images/hello.png"> 
+      <img src="images/hello.png" 
            alt="Котёнок с большими глазами" 
            loading="eager">
       <div class="hero-greeting">
